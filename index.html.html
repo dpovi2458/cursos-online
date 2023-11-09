@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos Online</title>
+    <style>
+        /* Estilos globales */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+
+        /* Estilos del encabezado */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Estilos de navegación */
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        /* Estilos de cursos */
+        .cursos {
+            padding: 20px;
+        }
+
+        .curso-detalle {
+            margin-bottom: 40px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .curso-detalle:hover {
+            background-color: #ffc107;
+        }
+
+        .curso-imagen img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .curso-descripcion {
+            margin-top: 20px;
+        }
+
+        /* Estilos de información adicional */
+        .informacion-adicional {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Estilos del pie de página */
+        footer {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Estilos del botón de volver arriba */
+        button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cursos en Línea</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#curso1">Curso 1</a></li>
+            <li><a href="#curso2">Curso 2</a></li>
+            <li><a href="#informacion">Información Adicional</a></li>
+        </ul>
+    </nav>
+
+    <section class="cursos" id="curso1">
+        <div class="curso-detalle" onclick="resaltarCurso(this)">
+            <h2>Curso 1: Cursos de marketing digital</h2>
+            <div class="curso-imagen">
+                <img src="https://media.istockphoto.com/id/1443560890/es/foto/concepto-de-tecnolog%C3%ADa-empresarial-de-marketing-digital-publicidad-en-el-sitio-web-correo.jpg?s=2048x2048&w=is&k=20&c=eXO9qc2nmIVtijVxxFnXUirI3XVfuvjssfPcb93E2qo=" alt="Concepto de tecnología empresarial de marketing digital">
+            </div>
+            <div class="curso-descripcion">
+                <p>Con el auge del comercio electrónico, cada vez hay más demanda de cursos que enseñen habilidades de marketing digital. Algunas opciones populares incluyen cursos de SEO, publicidad en línea, marketing de contenidos y redes sociales.</p>
+                <!-- Puedes agregar más detalles del curso aquí -->
+            </div>
+        </div>
+
+        <div class="curso-detalle">
+            <h2>Curso 2: Cursos de idiomas</h2>
+            <div class="curso-imagen">
+                <img srcset="https://cdn.pixabay.com/photo/2013/05/12/09/36/globe-110775_960_720.jpg 1x, https://cdn.pixabay.com/photo/2013/05/12/09/36/globe-110775_1280.jpg 2x" src="https://cdn.pixabay.com/photo/2013/05/12/09/36/globe-110775_1280.jpg" alt="Globo, Mundo, Idiomas, Traducir">
+            </div>
+            <div class="curso-descripcion">
+                <p>Los cursos de idiomas son siempre populares, especialmente en países donde hay una gran cantidad de inmigrantes. Algunos idiomas populares para enseñar incluyen inglés, español, francés y chino.</p>
+                <!-- Puedes agregar más detalles del curso aquí -->
+            </div>
+        </div>
+    </section>
+
+    <section class="cursos" id="curso2">
+        <!-- Contenido del Curso 2 -->
+    </section>
+
+    <section class="informacion-adicional" id="informacion">
+        <h2>¿Por Qué Elegir Nuestros Cursos?</h2>
+        <p><strong>Contenido de Calidad:</strong> Nuestros cursos ofrecen contenido actualizado y relevante, diseñado para proporcionarte las habilidades más recientes en el campo de estudio.</p>
+    
+        <p><strong>Profesores Expertos:</strong> Contamos con profesores altamente capacitados, expertos en sus respectivos campos, comprometidos con tu éxito y disponibles para brindarte apoyo cuando lo necesites.</p>
+    
+        <p><strong>Flexibilidad de Estudio:</strong> Entendemos que tienes una vida ocupada. Por eso, nuestros cursos están diseñados para ser flexibles, permitiéndote estudiar a tu propio ritmo y en tu propio horario.</p>
+    
+        <p><strong>Oportunidades de Carrera:</strong> Preparamos a nuestros estudiantes para carreras exitosas proporcionándoles las habilidades y conocimientos necesarios para destacar y avanzar en sus campos de estudio.</p>
+    
+        <p><strong>Comunidad de Aprendizaje:</strong> Únete a nuestra comunidad de estudiantes y profesionales, donde podrás conectar con otros apasionados por el aprendizaje y colaborar en proyectos.</p>
+    
+        <p><strong>Soporte Técnico:</strong> Ofrecemos soporte técnico dedicado para asegurarnos de que tengas una experiencia de aprendizaje sin problemas.</p>
+    </section>
+
+    <footer>
+        <p>© 2023 Cursos en Línea. Todos los derechos reservados. Contáctanos:</p>
+        <ul class="redes-sociales">
+            <li><a href="https://www.facebook.com/profile.php?id=61553163428307" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+            <li><a href="https://www.instagram.com/artzdavid2458/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="mailto:gorgojomagneto@gmail.com">Correo Electrónico</a></li>
+            <!-- Agrega más redes sociales o enlaces de contacto según sea necesario -->
+        </ul>
+    </footer>
+
+    <button onclick="volverArriba()">Volver arriba</button>
+
+    <script>
+        function resaltarCurso(curso) {
+            curso.style.backgroundColor = '#ffc107';
+        }
+
+        function volverArriba() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
